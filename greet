@@ -1,0 +1,13 @@
+import time
+timestamp =int( time.strftime('%H'))
+def time():
+    if timestamp<12:
+        return "Good morining"
+    elif timestamp>12 and timestamp<17:
+        return "good afternoon"
+    elif timestamp >17 and timestamp<21:
+       return "Good eveining"
+    else:
+       return "Good night"
+name=input("Enter your name:")
+print("Hello! "+name +" "+ time())
